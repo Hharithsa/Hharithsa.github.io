@@ -1,0 +1,20 @@
+.maincontainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+body {
+    text-align: center;
+    font-size: 8rem;
+}
+
+div div {
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.child{
+    color: gray;
+}

@@ -1,0 +1,86 @@
+<% layout('layout/plate.ejs') %>
+
+    <h1 class="m-4"><a href="/">Jokester</a></h1>
+
+    <div class="container row mainpanel">
+        <div class="d-flex flex-column justify-content-center align-items-center fades w-auto col col-md order-md-1 order-2">
+            <div class="slide">
+                <p class="joke">Setup</p>
+                <p class="cate">Category</p>
+                <p class="typ">Type</p>
+                <button>click to get joke</button>
+            </div>
+            <div class="slide">
+                <p class="second">Delivery</p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <span class="disc">Some jokes that appear may be offensive to parts of the community.
+                Use of blacklist filters is adviced
+            </span>
+        </div>
+        <div class="d-flex flex-column justify-content-evenly align-items-center mainContain col-md-3 order-md-2 order-1">
+            <div class="d-flex flex-column align-items-center">
+                <p>choose the category of jokes</p>
+                <form action="" class="category contain d-flex flex-row align-items-center flex-wrap justify-content-center">
+                    <label for="one"><input type="checkbox" name="category" id="one" class="catcheck" value="Any"
+                            checked>
+                        <span></span>
+                        Any</label>
+                    <label for="two"><input type="checkbox" name="category" id="two" class="catcheck" value="Dark">
+                        <span></span>
+                        Dark</label>
+                    <label for="three"><input type="checkbox" name="category" id="three" class="catcheck" value="Misc">
+                        <span></span>
+                        Misc</label>
+                    <label for="five"><input type="checkbox" name="category" id="five" class="catcheck" value="Pun">
+                        <span></span>
+                        Pun</label>
+                    <label for="four"><input type="checkbox" name="category" id="four" class="catcheck"
+                            value="Programming">
+                        <span></span>
+                        Programming</label>
+                </form>
+            </div>
+
+            <div class="d-flex flex-column align-items-center">
+                <p>choose if u want a single or twopart joke</p>
+                <form action="" class="type contain d-flex flex-row align-items-center flex-wrap justify-content-center">
+                    <label for="oone"><input type="checkbox" name="type" id="oone" class="typecheck single"
+                            value="single">
+                        <span></span>
+                        Single</label>
+                    <label for="ssecond"><input type="checkbox" name="type" id="ssecond" class="typecheck double"
+                            value="twopart" checked>
+                        <span></span>
+                        Twopart</label>
+                </form>
+            </div>
+
+            <div class="d-flex flex-column align-items-center">
+                <p>choose what you want to blacklist</p>
+                <form action="" class="blacklist contain d-flex flex-row align-items-center flex-wrap justify-content-center">
+                    <label for="nsfw"><input type="checkbox" name="blacklist" id="nsfw" class="blacheck" value="nsfw">
+                        <span></span>
+                        nsfw</label>
+                    <label for="religious"><input type="checkbox" name="blacklist" id="religious" class="blacheck"
+                            value="religious" checked>
+                        <span></span>
+                        Religious</label>
+                    <label for="racist"><input type="checkbox" name="blacklist" id="racist" class="blacheck"
+                            value="racist" checked>
+                        <span></span>
+                        Racist</label>
+                    <label for="sexist"><input type="checkbox" name="blacklist" id="sexist" class="blacheck"
+                            value="sexist" checked>
+                        <span></span>
+                        Sexist</label>
+                    <label for="explicit"><input type="checkbox" name="blacklist" id="explicit" class="blacheck"
+                            value="explicit">
+                        <span></span>
+                        Explicit</label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/public/joke/joke.js"></script>
